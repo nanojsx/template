@@ -1,0 +1,22 @@
+@import '../colors';
+
+#todo-list {
+  li {
+    padding: 6px;
+  }
+  form {
+    input {
+      margin-top: 4px;
+      padding: 2px 4px;
+      &:focus {
+        outline: none;
+      }
+    }
+    button {
+      background: $primary-color;
+      border: none;
+      color: white;
+      padding: 4px 12px;
+    }
+  }
+}

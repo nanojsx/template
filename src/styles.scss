@@ -1,0 +1,40 @@
+@import 'colors';
+
+// remove outline on press (chrome)
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+// remove outline on press (firefox)
+a:focus {
+  outline: none;
+}
+
+// remove input field outline on focus
+input:focus {
+  outline: none;
+}
+
+// change default a style
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+// change default list style
+ol,
+ul {
+  padding-left: 0px;
+}
+li {
+  list-style-type: none;
+}
+
+// some styles for the body
+body {
+  // user-select: none;
+  margin: 0px;
+  color: $font;
+  font-family: sans-serif;
+}

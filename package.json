@@ -1,0 +1,52 @@
+{
+  "name": "nano-jsx-template",
+  "version": "0.0.1",
+  "description": "Nano JSX Template using Isomorphic JSX.",
+  "scripts": {
+    "start": "npm run dev",
+    "serve": "node dist/server.bundle.js",
+    "build": "npm run clean && npm run webpack:prod && npm run webpack:server",
+    "dev": "webpack --config webpack/webpack.client.dev.js && webpack --config webpack/webpack.server.js && npm-run-all --parallel dev:*",
+    "dev:nodemon": "nodemon --watch src --ext css,scss,sass,js,ts,tsx,webmanifest --watch dist dist/server.bundle.js",
+    "dev:webpack-client": "webpack --config webpack/webpack.client.dev.js --watch",
+    "dev:webpack-server": "webpack --config webpack/webpack.server.js --watch",
+    "webpack:server": "webpack --config webpack/webpack.server.js",
+    "webpack:prod": "webpack --config webpack/webpack.client.prod.js",
+    "postinstall": "npm run build",
+    "clean": "rimraf dist"
+  },
+  "keywords": [],
+  "author": "Yannick Deubel",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "nano-jsx": "^0.0.10",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/compression": "^1.7.0",
+    "@types/node-fetch": "^2.5.7",
+    "autoprefixer": "^9.8.5",
+    "copy-webpack-plugin": "^6.0.3",
+    "css-loader": "^3.6.0",
+    "nodemon": "^2.0.4",
+    "npm-run-all": "^4.1.5",
+    "null-loader": "^4.0.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-scss": "^2.1.1",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.2",
+    "to-string-loader": "^1.1.6",
+    "ts-loader": "^8.0.0",
+    "typescript": "^3.9.6",
+    "webpack": "^5.0.0-beta.22",
+    "webpack-cli": "^4.0.0-beta.8",
+    "webpack-manifest-plugin": "^3.0.0-rc.0",
+    "webpack-merge": "^5.0.9",
+    "webpack-node-externals": "^2.5.0"
+  }
+}
