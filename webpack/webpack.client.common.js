@@ -1,7 +1,7 @@
 const path = require('path')
 const glob = require('glob')
 const CopyPlugin = require('copy-webpack-plugin')
-const ManifestPlugin = require('webpack-manifest-plugin')
+const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 
 module.exports = {
   // create one bundle for each file in /src/client
@@ -30,6 +30,6 @@ module.exports = {
     new CopyPlugin({
       patterns: [{ from: 'public', to: '../' }]
     }),
-    new ManifestPlugin()
+    new WebpackManifestPlugin({ publicPath: '', basePath: '', })
   ]
 }
