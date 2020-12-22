@@ -11,7 +11,7 @@ export const AboutPage = (props: any) => {
       <p>This is the Nano JSX Template.</p>
       <p>
         Although, this App is completely build using Isomorphic JSX, it contains{' '}
-        <b>only 3.7kB scripts.</b>
+        <b>only 4.3kB of JavaScript.</b>
       </p>
       <p>It is a MPA but feels like an SPA.</p>
       <p>

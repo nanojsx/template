@@ -1,4 +1,5 @@
 import Nano, { withStyles, Link } from 'nano-jsx'
+import { VERSION } from 'nano-jsx/lib/version'
 
 import styles from '../styles.scss'
 import mainStyles from './MainLayout.scss'
@@ -22,9 +23,14 @@ const MainLayout = (props: any) => {
       </header>
       <div id="content">{props.children}</div>
       <footer>
-        <a href="https://nanojsx.github.io/">Visit Website</a> |{' '}
-        <a href="https://github.com/nanojsx/template">Get the Template</a> |{' '}
-        <a href="https://github.com/sponsors/yandeu">Become a Sponsor</a>
+        <div>
+          <a href="https://nanojsx.github.io/">Visit Website</a> |{' '}
+          <a href="https://github.com/nanojsx/template">Get the Template</a> |{' '}
+          <a href="https://github.com/sponsors/yandeu">Become a Sponsor</a>
+        </div>
+        <div>
+          <small>Nano JSX v{VERSION}</small>
+        </div>
       </footer>
     </div>
   )
