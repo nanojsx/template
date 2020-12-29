@@ -15,11 +15,11 @@ const server = {
     rules: [
       {
         test: /\.css$/,
-        use: ['to-string-loader', 'css-loader', 'postcss-loader']
+        use: ['css-loader', 'postcss-loader']
       },
       {
         test: /\.s[ac]ss$/i,
-        use: ['to-string-loader', 'css-loader', 'sass-loader', 'postcss-loader']
+        use: ['css-loader', 'sass-loader', 'postcss-loader']
       }
     ]
   },

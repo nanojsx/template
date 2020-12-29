@@ -4,8 +4,10 @@ import { Component } from 'nano-jsx/lib/component'
 import styles from './TodoList.scss'
 import { withStyles } from 'nano-jsx/lib/withStyles'
 
-class TodoList extends Component {
-  state: { todos: string[] } = { todos: [] }
+class TodoList extends Component<{}, { todos: string[] }> {
+  willMount() {
+    this.state = { todos: [] }
+  }
 
   didMount() {
     // get todos from localStorage
