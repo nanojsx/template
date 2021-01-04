@@ -6,10 +6,10 @@ A [Nano JSX](https://nanojsx.github.io/) Template for building Isomorphic JSX Ap
 
 ```bash
 # download
-npx degit nanojsx/template nano-jsx-project
+npx degit nanojsx/template nano
 
 # directory
-cd nano-jsx-project
+cd nano
 
 # install
 npm i
