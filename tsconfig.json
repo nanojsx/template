@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2015",
-    "module": "commonjs",
+    "module": "esnext",
     "moduleResolution": "Node",
     "jsx": "react",
     "jsxFactory": "Nano.h",
