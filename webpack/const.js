@@ -3,13 +3,10 @@ exports.REGEX = {
   CLIENT_STYLES: /\.client(\.module)?\.s?[ac]ss$/i
 }
 
+const LOADERS = ['css-loader?url=false', 'postcss-loader', 'sass-loader']
+
 exports.LOADER = {
-  STYLES: ['css-loader?url=false', 'postcss-loader', 'sass-loader'],
-  CLIENT_STYLES: [
-    'style-loader',
-    'css-loader?url=false',
-    'postcss-loader',
-    'sass-loader'
-  ],
+  STYLES: LOADERS,
+  CLIENT_STYLES: ['style-loader', ...LOADERS],
   NULL: ['null-loader']
 }
