@@ -4,12 +4,12 @@
   "description": "A simple PWA using nano-jsx",
   "icons": [
     {
-      "src": "/public/img/icons/icons-192.png",
+      "src": "/public/img/pwa/icons-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/public/img/icons/icons-512.png",
+      "src": "/public/img/pwa/icons-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }

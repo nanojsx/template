@@ -21,7 +21,7 @@ export const makeHtml = (
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#3367D6">
     <link rel="manifest" href="/manifest.webmanifest">
-    <link rel="apple-touch-icon" href="/public/img/icons/icons-192.png">
+    <link rel="apple-touch-icon" href="/public/img/pwa/icons-192.png">
     ${head.join('\n')}
   </head>
 
