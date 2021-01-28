@@ -1,14 +1,14 @@
 declare module '*.css' {
-  const styles: string
+  const styles: any
   export default styles
 }
 
 declare module '*.scss' {
-  const styles: string
+  const styles: any
   export default styles
 }
 
 declare module '*.sass' {
-  const styles: string
+  const styles: any
   export default styles
 }

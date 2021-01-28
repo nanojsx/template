@@ -2,6 +2,7 @@ const path = require('path')
 const common = require('./webpack.common')
 const { merge } = require('webpack-merge')
 const nodeExternals = require('webpack-node-externals')
+const { REGEX, LOADER } = require('./const')
 
 const server = {
   mode: 'development',
@@ -14,12 +15,9 @@ const server = {
   module: {
     rules: [
       {
-        test: /\.css$/,
-        use: ['css-loader?url=false', 'postcss-loader']
-      },
-      {
-        test: /\.s[ac]ss$/i,
-        use: ['css-loader?url=false', 'postcss-loader', 'sass-loader']
+        test: REGEX.STYLES,
+        exclude: REGEX.CLIENT_STYLES,
+        use: LOADER.STYLES
       }
     ]
   },

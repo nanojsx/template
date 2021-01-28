@@ -2,6 +2,7 @@ const path = require('path')
 const glob = require('glob')
 const CopyPlugin = require('copy-webpack-plugin')
 const { WebpackManifestPlugin } = require('webpack-manifest-plugin')
+const { REGEX, LOADER } = require('./const')
 
 module.exports = {
   // create one bundle for each file in /src/client
@@ -22,8 +23,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.s?[ac]ss$/i,
-        use: ['null-loader']
+        test: REGEX.CLIENT_STYLES,
+        use: LOADER.CLIENT_STYLES
+      },
+      {
+        test: REGEX.STYLES,
+        exclude: REGEX.CLIENT_STYLES,
+        use: LOADER.NULL
       }
     ]
   },
