@@ -1,6 +1,6 @@
 {
   "name": "nano-jsx-template",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Nano JSX Template using Isomorphic JSX.",
   "scripts": {
     "start": "npm run dev",
@@ -24,7 +24,7 @@
   "dependencies": {
     "compression": "^1.7.4",
     "express": "^4.17.1",
-    "nano-jsx": "0.0.15",
+    "nano-jsx": "0.0.16",
     "node-fetch": "^2.6.1"
   },
   "devDependencies": {
