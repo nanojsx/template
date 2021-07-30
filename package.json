@@ -5,13 +5,13 @@
   "scripts": {
     "start": "npm run dev",
     "serve": "node dist/server.bundle.js",
-    "build": "npm run clean && npm run webpack:prod && npm run webpack:server",
+    "build": "npm run clean && npm-run-all --parallel prod:*",
     "dev": "webpack --config webpack/webpack.client.dev.js && webpack --config webpack/webpack.server.js && npm-run-all --parallel dev:*",
     "dev:nodemon": "nodemon --watch src --ext css,scss,sass,js,ts,tsx,webmanifest --watch dist dist/server.bundle.js",
     "dev:webpack-client": "webpack --config webpack/webpack.client.dev.js --watch",
     "dev:webpack-server": "webpack --config webpack/webpack.server.js --watch",
-    "webpack:server": "webpack --config webpack/webpack.server.js",
-    "webpack:prod": "webpack --config webpack/webpack.client.prod.js",
+    "prod:webpack-client": "webpack --config webpack/webpack.client.prod.js",
+    "prod:webpack-server": "webpack --config webpack/webpack.server.prod.js",
     "postinstall": "npm run build",
     "clean": "rimraf dist"
   },
