@@ -3,7 +3,16 @@ exports.REGEX = {
   CLIENT_STYLES: /\.client(\.module)?\.s?[ac]ss$/i
 }
 
-const LOADERS = ['css-loader?url=false', 'postcss-loader', 'sass-loader']
+const LOADERS = [
+  {
+    loader: 'css-loader',
+    options: {
+      url: false
+    }
+  },
+  'postcss-loader',
+  'sass-loader'
+]
 
 exports.LOADER = {
   STYLES: LOADERS,
