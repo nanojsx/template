@@ -30,6 +30,8 @@ export const makeHtml = (
     ${footer.join('\n')}
 
     <!-- <script>
+      "use strict";
+
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/sw.js');
       }
