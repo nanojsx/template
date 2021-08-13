@@ -11,7 +11,7 @@ module.exports = {
       absolute: true
     })
     .reduce((acc, path) => {
-      const entry = path.match(/[^\/]+\.tsx?$/gm)[0].replace('.tsx', '')
+      const entry = path.match(/[^\/]+\.tsx?$/gm)[0].replace(/\.tsx?$/, '')
       acc[entry] = path
       return acc
     }, {}),
