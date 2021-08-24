@@ -52,10 +52,7 @@ class TodoList extends Component<{}, { todos: string[] }> {
           {this.state.todos.map((todo: any, index: number) => (
             <li>
               {todo}{' '}
-              <span
-                onClick={() => this.removeHandler(index)}
-                style={{ color: 'red', cursor: 'pointer' }}
-              >
+              <span onClick={() => this.removeHandler(index)} style={{ color: 'red', cursor: 'pointer' }}>
                 x
               </span>
             </li>

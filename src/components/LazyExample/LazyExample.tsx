@@ -19,8 +19,7 @@ const LazyExample = () => {
         <br />
         <small>
           <i>
-            This text and its styling are lazy loaded (in another .js file) and
-            will appear once you click on the page.
+            This text and its styling are lazy loaded (in another .js file) and will appear once you click on the page.
           </i>
         </small>
       </p>

@@ -8,11 +8,7 @@ const manifest = JSON.parse(
 )
 
 // prepare html markup
-export const makeHtml = (
-  body: any,
-  head: string[] = [],
-  footer: string[] = []
-) => {
+export const makeHtml = (body: any, head: string[] = [], footer: string[] = []) => {
   let html = `
 <!DOCTYPE html>
 <html lang="en">

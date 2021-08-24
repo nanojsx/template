@@ -58,6 +58,4 @@ app.get('/manifest.webmanifest', (req: any, res: any) => {
 app.use('/public', express.static('./dist/public')) // , { maxAge: 60 * 60 * 1000 }))
 
 // start the server
-app.listen(port, () =>
-  console.log(`Example app listening at http://localhost:${port}`)
-)
+app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))

@@ -9,13 +9,11 @@ const hydrate = async () => {
   window.addEventListener(
     'click',
     () =>
-      import('../components/LazyExample/LazyExample').then(
-        ({ default: LazyComponent }) => {
-          const html = Nano.hydrate(<LazyComponent />)
-          const homePage = document.getElementById('homePage')
-          homePage?.appendChild(html)
-        }
-      ),
+      import('../components/LazyExample/LazyExample').then(({ default: LazyComponent }) => {
+        const html = Nano.hydrate(<LazyComponent />)
+        const homePage = document.getElementById('homePage')
+        homePage?.appendChild(html)
+      }),
     { once: true }
   )
 
