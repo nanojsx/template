@@ -39,11 +39,11 @@ jobs:
       - name: Build Packages
         run: npm run build
 
-      # - name: Run Prettier
-      #   run: npm run format
+      - name: Run Prettier
+        run: npm run format
 
       # - name: Run ESLint
       #   run: npm run lint
 
       # - name: Upload coverage to Codecov
-      #   uses: codecov/codecov-action@v1
+      #   uses: codecov/codecov-action@v2

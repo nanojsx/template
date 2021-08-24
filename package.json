@@ -13,7 +13,9 @@
     "prod:webpack-client": "webpack --config webpack/webpack.client.prod.js",
     "prod:webpack-server": "webpack --config webpack/webpack.server.prod.js",
     "postinstall": "npm run build",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "format:check": "prettier --check src/**/*",
+    "format": "prettier --write src/**/*"
   },
   "keywords": [],
   "author": "Yannick Deubel",
@@ -30,6 +32,7 @@
   "devDependencies": {
     "@types/compression": "^1.7.0",
     "@types/node-fetch": "^2.5.8",
+    "@yandeu/prettier-config": "^0.0.2",
     "autoprefixer": "^10.2.3",
     "copy-webpack-plugin": "^9.0.1",
     "css-loader": "^6.2.0",
@@ -37,6 +40,7 @@
     "npm-run-all": "^4.1.5",
     "null-loader": "^4.0.1",
     "postcss-loader": "^6.1.1",
+    "prettier": "^2.3.2",
     "rimraf": "^3.0.2",
     "sass": "^1.32.5",
     "sass-loader": "^12.1.0",
