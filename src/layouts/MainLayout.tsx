@@ -36,4 +36,4 @@ const MainLayout = (props: any) => {
   )
 }
 
-export default withStyles(styles.concat(mainStyles))(MainLayout)
+export default withStyles(styles.toString() + '' + mainStyles.toString())(MainLayout)

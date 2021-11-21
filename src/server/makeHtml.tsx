@@ -48,7 +48,7 @@ export const makeHtml = (body: any, head: string[] = [], footer: string[] = []) 
   }
 
   addChunkHash()
-  minify()
+  // minify()
 
   return html
 }
