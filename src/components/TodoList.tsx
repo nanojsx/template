@@ -63,4 +63,4 @@ class TodoList extends Component<{}, { todos: string[] }> {
   }
 }
 
-export default withStyles(styles.toString())(TodoList)
+export default withStyles(styles)(TodoList)
