@@ -5,7 +5,15 @@ import styles from './TodoList.scss'
 import { withStyles } from 'nano-jsx/lib/withStyles'
 
 class TodoList extends Component<{}, { todos: string[] }> {
-  willMount() {
+  constructor(props: any) {
+    super(props)
+
+    // set a unique id if you use this component more than
+    // once across your app and it is using a state
+    this.id = 'TodoList'
+
+    // this state now has the id 'TodoList' and can be accessed
+    // by any other component using that id and the useState() hook
     this.state = { todos: [] }
   }
 
