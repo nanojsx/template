@@ -7,8 +7,8 @@ import { withStyles } from 'nano-jsx/lib/withStyles'
 class TodoList extends Component<{}, { todos: string[] }> {
   constructor(props: any) {
     super(props)
-    
-    // set a unique id if you use this component more than 
+
+    // set a unique id if you use this component more than
     // once across your app and it is using a state
     this.id = 'TodoList'
 
