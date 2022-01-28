@@ -20,7 +20,7 @@ npm start
 # production
 npm run build
 
-# serve
+# serve (on http://localhost:3000/)
 npm run serve
 ```
 
@@ -56,6 +56,7 @@ Uncaught (in promise) ChunkLoadError: Loading chunk
 ```
 
 This is related to the disabled browser option:
+
 ```
 Allow invalid certificates for resources loaded from localhost.
 ```
@@ -67,4 +68,3 @@ In the Chrome address bar, type [chrome://flags/#allow-insecure-localhost](chrom
 **Fix for Firefox**
 
 No supported option to disable for localhost only.
-
