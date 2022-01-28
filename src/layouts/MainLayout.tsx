@@ -1,4 +1,4 @@
-import Nano, { withStyles, Link } from 'nano-jsx'
+import Nano, { h, withStyles, Link } from 'nano-jsx'
 import { VERSION } from 'nano-jsx/lib/version'
 
 import styles from '../styles.scss'

@@ -1,4 +1,4 @@
-import Nano, { Helmet } from 'nano-jsx'
+import { h, Helmet } from 'nano-jsx'
 import MainLayout from '../layouts/MainLayout'
 
 export const AboutPage = (props: any) => {

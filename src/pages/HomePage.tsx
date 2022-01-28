@@ -1,4 +1,4 @@
-import Nano, { Helmet } from 'nano-jsx'
+import Nano, { h, Helmet } from 'nano-jsx'
 import MainLayout from '../layouts/MainLayout'
 import TodoList from '../components/TodoList'
 

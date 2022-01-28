@@ -1,4 +1,4 @@
-import * as Nano from 'nano-jsx/lib/core'
+import { h } from 'nano-jsx/lib/core'
 
 // you don't need "withStyles" if you include your css in the client bundle
 // import { withStyles } from 'nano-jsx/lib/withStyles'

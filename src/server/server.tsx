@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 import compression from 'compression'
-import Nano, { Helmet } from 'nano-jsx'
+import Nano, { h, Helmet } from 'nano-jsx'
 
 import { makeHtml } from './makeHtml'
 

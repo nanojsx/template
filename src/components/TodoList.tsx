@@ -1,4 +1,4 @@
-import * as Nano from 'nano-jsx/lib/core'
+import { h } from 'nano-jsx/lib/core'
 import { Component } from 'nano-jsx/lib/component'
 
 import styles from './TodoList.scss'
