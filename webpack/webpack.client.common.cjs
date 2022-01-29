@@ -2,7 +2,7 @@ const path = require('path')
 const glob = require('glob')
 const CopyPlugin = require('copy-webpack-plugin')
 const { WebpackManifestPlugin } = require('webpack-manifest-plugin')
-const { REGEX, LOADER } = require('./const')
+const { REGEX, LOADER } = require('./const.cjs')
 
 module.exports = {
   // create one bundle for each file in /src/client

@@ -1,4 +1,4 @@
-const devServer = require('./webpack.server')
+const devServer = require('./webpack.server.cjs')
 const { merge } = require('webpack-merge')
 
 const server = {

@@ -1,5 +1,5 @@
-const common = require('./webpack.common')
-const hydrate = require('./webpack.client.common')
+const common = require('./webpack.common.cjs')
+const hydrate = require('./webpack.client.common.cjs')
 const { merge } = require('webpack-merge')
 
 const prod = {

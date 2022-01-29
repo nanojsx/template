@@ -1,8 +1,8 @@
 const path = require('path')
-const common = require('./webpack.common')
+const common = require('./webpack.common.cjs')
 const { merge } = require('webpack-merge')
 const nodeExternals = require('webpack-node-externals')
-const { REGEX, LOADER } = require('./const')
+const { REGEX, LOADER } = require('./const.cjs')
 
 const server = {
   mode: 'development',
