@@ -18,7 +18,7 @@
     "format": "prettier --write src/**/*"
   },
   "keywords": [],
-  "author": "Yannick Deubel",
+  "author": "Yannick Deubel (https://github.com/yandeu)",
   "license": "MIT",
   "engines": {
     "node": ">=12"

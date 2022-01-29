@@ -14,7 +14,7 @@ cd nano
 # install
 npm i
 
-# development
+# development (on http://localhost:3000/)
 npm start
 
 # production
