@@ -1,4 +1,5 @@
 module.exports = {
+  stats: 'errors-warnings',
   resolve: {
     extensions: ['.ts', '.tsx', '.js']
   },
