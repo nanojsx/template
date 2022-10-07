@@ -3,8 +3,8 @@
     "rootDir": "./src",
 
     "target": "ES2015",
-    "module": "ESNext",
-    "moduleResolution": "Node",
+    "module": "ES2020",
+    "moduleResolution": "node",
 
     "jsx": "react",
     "jsxFactory": "h",

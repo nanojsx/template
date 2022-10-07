@@ -1,5 +1,5 @@
 import Nano, { h, withStyles, Link } from 'nano-jsx'
-import { VERSION } from 'nano-jsx/lib/version'
+import { VERSION } from 'nano-jsx/lib/version.js'
 
 import styles from '../styles.scss'
 import mainStyles from './MainLayout.scss'

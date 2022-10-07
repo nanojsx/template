@@ -1,6 +1,7 @@
 const path = require('path')
 const glob = require('glob')
 const CopyPlugin = require('copy-webpack-plugin')
+const ResolveTypeScriptPlugin = require('resolve-typescript-plugin')
 const { WebpackManifestPlugin } = require('webpack-manifest-plugin')
 const { REGEX, LOADER } = require('./const.cjs')
 
@@ -32,6 +33,9 @@ module.exports = {
         use: LOADER.NULL
       }
     ]
+  },
+  resolve: {
+    plugins: [new ResolveTypeScriptPlugin()]
   },
   plugins: [
     new CopyPlugin({

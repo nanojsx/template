@@ -1,6 +1,6 @@
-import { h, hydrate } from 'nano-jsx/lib/core'
-import { printVersion } from 'nano-jsx/lib/helpers'
-import TodoList from '../components/TodoList'
+import { h, hydrate } from 'nano-jsx/lib/core.js'
+import { printVersion } from 'nano-jsx/lib/helpers.js'
+import TodoList from '../components/TodoList.js'
 
 const main = async () => {
   hydrate(<TodoList />, document.getElementById('todo-list'))
@@ -9,7 +9,7 @@ const main = async () => {
   window.addEventListener(
     'click',
     () =>
-      import('../components/LazyExample/LazyExample').then(({ default: LazyComponent }) => {
+      import('../components/LazyExample/LazyExample.js').then(({ default: LazyComponent }) => {
         const html = hydrate(<LazyComponent />)
         const homePage = document.getElementById('homePage')
         homePage?.appendChild(html)

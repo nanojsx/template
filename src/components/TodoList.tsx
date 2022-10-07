@@ -1,8 +1,8 @@
-import { h } from 'nano-jsx/lib/core'
-import { Component } from 'nano-jsx/lib/component'
+import { h } from 'nano-jsx/lib/core.js'
+import { Component } from 'nano-jsx/lib/component.js'
 
 import styles from './TodoList.scss'
-import { withStyles } from 'nano-jsx/lib/withStyles'
+import { withStyles } from 'nano-jsx/lib/withStyles.js'
 
 class TodoList extends Component<{}, { todos: string[] }> {
   constructor(props: any) {
