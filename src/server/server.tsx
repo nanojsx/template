@@ -1,4 +1,3 @@
-import fetch from 'node-fetch'
 import compression from 'compression'
 import Nano, { h, Helmet } from 'nano-jsx'
 

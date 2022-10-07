@@ -26,8 +26,7 @@
   "dependencies": {
     "compression": "^1.7.4",
     "express": "^4.17.2",
-    "nano-jsx": "^0.0.34",
-    "node-fetch": "^2.6.1"
+    "nano-jsx": "^0.0.34"
   },
   "devDependencies": {
     "@types/compression": "^1.7.2",
